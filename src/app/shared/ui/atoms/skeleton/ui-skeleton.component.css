@@ -1,0 +1,28 @@
+.ui-skeleton {
+  display: block;
+  border-radius: var(--ui-radius-sm);
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--ui-muted) 12%, transparent),
+      color-mix(in srgb, var(--ui-muted) 24%, transparent),
+      color-mix(in srgb, var(--ui-muted) 12%, transparent)
+    );
+  background-size: 220% 100%;
+  animation: ui-skeleton-shimmer 1.15s ease-in-out infinite;
+}
+
+.ui-skeleton.circle {
+  border-radius: 999px;
+}
+
+@keyframes ui-skeleton-shimmer {
+  from { background-position: 120% 0; }
+  to { background-position: -120% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-skeleton {
+    animation: none;
+  }
+}

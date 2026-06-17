@@ -1,0 +1,29 @@
+<div class="site-shell">
+  <div class="custom-cursor" [style.transform]="'translate3d(' + mouseX() + 'px,' + mouseY() + 'px,0)'"></div>
+
+  <main>
+    <app-hero-section (sectionSelected)="scrollTo($event)" />
+    <app-about-section [stats]="stats" [features]="features" />
+    <app-services-section [services]="services" />
+    <app-tech-section [technologies]="technologies" />
+    <app-portfolio-section [portfolio]="portfolio" />
+    <app-process-section [process]="process" />
+    <app-testimonials-section
+      [testimonials]="testimonials"
+      [activeIndex]="activeTestimonial()"
+      (previous)="previousTestimonial()"
+      (next)="nextTestimonial()"
+      (selected)="setTestimonial($event)" />
+    <app-contact-section />
+  </main>
+
+  <app-home-navbar
+    [items]="navItems"
+    [scrolled]="scrolled()"
+    [hidden]="navbarHidden()"
+    (hovered)="setNavbarHover($event)"
+    (sectionSelected)="scrollTo($event)" />
+
+  <app-home-footer />
+  <app-chat-widget />
+</div>

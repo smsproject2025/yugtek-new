@@ -1,0 +1,39 @@
+<main class="login-shell">
+  <a class="brand" routerLink="/home" aria-label="Yugtek Technologies home">
+    <img src="/yugtek_logo_enhanced.png" alt="Yugtek Technologies logo" />
+    <h2>Yugtek</h2>
+  </a>
+
+  <section class="login-layout">
+    <div class="login-copy">
+      <p class="eyebrow">Secure workspace</p>
+      <h2>Sign in to manage Yugtek customer operations.</h2>
+      <p>Access protected customer dashboards, delivery data, and account workflows from one focused console.</p>
+      <div class="trust-row" aria-label="Login security highlights">
+        <span><ui-icon name="shield" />Role based access</span>
+        <span><ui-icon name="lock" />Protected routes</span>
+        <span><ui-icon name="activity" />Audit ready</span>
+      </div>
+    </div>
+
+    <form class="login-card" (ngSubmit)="submit()" aria-label="Login to Yugtek workspace">
+      <div>
+        <p class="eyebrow">Login</p>
+        <h2>Welcome back</h2>
+      </div>
+
+      <label>Email
+        <input name="email" type="email" [(ngModel)]="email" autocomplete="email" placeholder="you@yugtek.com" />
+      </label>
+
+      <label>Password
+        <input name="password" type="password" [(ngModel)]="password" autocomplete="current-password" placeholder="Enter password" />
+      </label>
+
+      <p class="form-error" *ngIf="error()">{{ error() }}</p>
+
+      <button type="submit"><ui-icon name="log-in" />Login</button>
+      <a routerLink="/home"><ui-icon name="arrow-left" />Back to website</a>
+    </form>
+  </section>
+</main>

@@ -1,0 +1,30 @@
+.ui-button {
+  min-height: 42px;
+  border: 1px solid color-mix(in srgb, var(--ui-primary) 52%, transparent);
+  border-radius: var(--ui-radius-sm);
+  padding: .75rem 1rem;
+  color: #06110f;
+  background: var(--ui-primary);
+  box-shadow: var(--ui-shadow-sm);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.ui-button:hover {
+  transform: translateY(-2px);
+  background: var(--primary-hover);
+  box-shadow: var(--ui-shadow-md);
+}
+
+.ui-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ui-primary) 35%, transparent);
+  outline-offset: 3px;
+}
+
+.ui-button.secondary {
+  color: var(--ui-text);
+  background: var(--ui-surface);
+  border-color: var(--ui-border);
+}

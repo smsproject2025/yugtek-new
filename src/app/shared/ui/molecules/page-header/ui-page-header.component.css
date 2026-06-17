@@ -1,0 +1,29 @@
+.ui-page-header {
+  max-width: 860px;
+  margin: 2rem 0;
+}
+
+.ui-page-header p {
+  margin: 0 0 .8rem;
+  color: var(--ui-primary);
+  font-size: .76rem;
+  font-weight: 850;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.ui-page-header h1 {
+  margin: 0;
+  color: var(--ui-text);
+  font-family: var(--ui-font-display);
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  line-height: 1;
+}
+
+.ui-page-header span {
+  display: block;
+  max-width: 680px;
+  margin-top: 1rem;
+  color: var(--ui-muted);
+  line-height: 1.7;
+}

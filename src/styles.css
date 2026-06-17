@@ -1,0 +1,200 @@
+@import './app/shared/ui/motion/ui-motion.css';
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/clarity-city/ClarityCity-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+html, body { margin: 0; background: #061119; }
+html { color-scheme: dark; }
+html[data-theme="dark"], html[data-theme="dark"] body { background: #061119; color-scheme: dark; }
+body {
+  overflow-x: hidden;
+  font-family: 'Clarity City', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+button, input, textarea { font: inherit; }
+
+:root {
+  --neutral-950: #061119;
+  --neutral-900: #081923;
+  --neutral-850: #0d2530;
+  --neutral-800: #123445;
+  --neutral-700: #1b4a5f;
+  --neutral-600: #2e6076;
+  --neutral-500: #64748b;
+  --neutral-400: #94a3b8;
+  --neutral-300: #cbd5e1;
+  --neutral-200: #e2e8f0;
+  --neutral-100: #f1f5f9;
+  --neutral-50: #f8fafc;
+  --primary: #12b8d6;
+  --primary-hover: #38d9f2;
+  --primary-pressed: #087ca3;
+  --secondary: #0e5b73;
+  --accent: #4ee3b1;
+  --accent-hover: #7ef6cc;
+  --success: #4ee3b1;
+  --warning: #f6c760;
+  --error: #f43f5e;
+  --ui-bg: var(--neutral-950);
+  --ui-surface: var(--neutral-850);
+  --ui-surface-soft: var(--neutral-900);
+  --ui-text: var(--neutral-50);
+  --ui-muted: var(--neutral-400);
+  --ui-primary: var(--primary);
+  --ui-accent: var(--accent);
+  --ui-border: rgba(226, 232, 240, .12);
+  --ui-radius-sm: .625rem;
+  --ui-radius-md: .875rem;
+  --ui-shadow-sm: 0 8px 24px rgba(0, 0, 0, .24);
+  --ui-shadow-md: 0 18px 48px rgba(0, 0, 0, .34);
+  --ui-font-display: 'Clarity City', ui-sans-serif, system-ui, sans-serif;
+  --ui-font-sans: 'Clarity City', ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection { background: rgba(18, 184, 214, .34); color: #fff; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #061119; }
+::-webkit-scrollbar-thumb { background: #123445; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(18, 184, 214, .58); }
